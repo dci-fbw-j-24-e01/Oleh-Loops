@@ -53,7 +53,6 @@ public class Hotel2 {
                 total = days * (nightCost + breakfast);
 
                 System.out.println("Okay. For " + days + " days + breakfasts... That'll be " + total + " squats");
-
             } else {
                 if (days >= 5 && days < 10){
                     double discount = nightCost * fiveDays;

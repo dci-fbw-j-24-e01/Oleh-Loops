@@ -37,7 +37,6 @@ public class Hotel {
             } else if (room == 4){
                 System.out.println("I'm sorry. This country doesn't exist. I've already called in special doctors. They will definitely help you )))");
                                 break;
-
             }
             if (plusBreakfast.equals("yes")){
                 if (days >= 5 && days < 10){
