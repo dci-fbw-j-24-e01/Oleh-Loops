@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class Hotel2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         double nightCost = 0;
         double nightNormal = 90;
         double nightDeluxe = 120;
@@ -16,8 +16,10 @@ public class Hotel2 {
         double total;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Good day, (not) dear (not) guest!");
-        System.out.println("One night in Normal room is worth 90 squats, in Deluxe room: 120, in Deluxe suites: 150 and in the closet that opens to Narnia.. \nAnd breakfast + 10. If you wish \n" +
-                "For long stays there are discounts: 5 days - 10%, 10 days - 15%, more than 15 days - 20%");
+        System.out.println("""
+                One night in Normal room is worth 90 squats, in Deluxe room: 120, in Deluxe suites: 150 and in the closet that opens to Narnia..\s
+                And breakfast + 10. If you wish\s
+                For long stays there are discounts: 5 days - 10%, 10 days - 15%, more than 15 days - 20%""");
         System.out.println("How many days do you want to stay at the hotel?");
 
 
@@ -49,7 +51,6 @@ public class Hotel2 {
                     double discount = nightCost * fifteenDays;
                     nightCost = nightCost - discount;
                 }
-
                 double breakfast = 10;
                 total = days * (nightCost + breakfast);
                 System.out.println("Okay. For " + days + " days + breakfasts... That'll be " + total + " squats");

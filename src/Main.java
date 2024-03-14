@@ -5,7 +5,6 @@ public class Main {
         int payment = 1000;
         int years = 0;
         double interestRate = 0.28;
-
        while (currentBalance < finalBalance){
             currentBalance += payment;
             currentBalance = currentBalance + currentBalance * interestRate;

@@ -12,8 +12,6 @@ public class LoopWile {
         System.out.println("========");
         while (counter1 < 100 ){
             if (counter1 % 2 == 0){
-
-//                System.out.println(counter1);
             }
             counter1 += 1;
         }

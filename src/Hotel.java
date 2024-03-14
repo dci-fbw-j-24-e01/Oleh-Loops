@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Hotel {
@@ -16,8 +15,10 @@ public class Hotel {
         double total;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Good day, (not) dear (not) guest!");
-        System.out.println("One night in Normal room is worth 90 squats, in Deluxe room: 120, in Deluxe suites: 150 and in the closet that opens to Narnia.. \nAnd breakfast + 10. If you wish...\n" +
-                "For long stays there are discounts: 5 days - 10%, 10 days - 15%, more than 15 days - 20%");
+        System.out.println("""
+                One night in Normal room is worth 90 squats, in Deluxe room: 120, in Deluxe suites: 150 and in the closet that opens to Narnia...\s
+                And breakfast + 10. If you wish...
+                For long stays there are discounts: 5 days - 10%, 10 days - 15%, more than 15 days - 20%""");
         System.out.println("How many days do you want to stay at the hotel?");
 
 
@@ -37,7 +38,6 @@ public class Hotel {
             } else if (room == 4){
                 System.out.println("I'm sorry. This country doesn't exist. I've already called in special doctors. They will definitely help you )))");
                                 break;
-
             }
             if (plusBreakfast.equals("yes")){
                 if (days >= 5 && days < 10){
