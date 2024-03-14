@@ -49,9 +49,9 @@ public class Hotel2 {
                     double discount = nightCost * fifteenDays;
                     nightCost = nightCost - discount;
                 }
+
                 double breakfast = 10;
                 total = days * (nightCost + breakfast);
-
                 System.out.println("Okay. For " + days + " days + breakfasts... That'll be " + total + " squats");
             } else {
                 if (days >= 5 && days < 10){

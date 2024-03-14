@@ -5,7 +5,6 @@ public class LoopWile {
         int counter1 = 1;
         while (counter <= 5){
             System.out.print(counter + ",");
-
            counter += 1;
         }
         System.out.println("\n");
